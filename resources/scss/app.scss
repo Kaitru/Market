@@ -1,0 +1,40 @@
+// Базовые стили
+@use 'base/reset';
+@use 'base/variables' as *;
+@use 'base/typography';
+
+// Утилиты
+@use 'utilities/mixins' as *;
+@use 'utilities/functions' as *;
+
+// Компоненты
+@use 'components/buttons';
+
+// Макеты
+@use 'layouts/header';
+@use 'layouts/footer';
+
+// Глобальные стили
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: $text-color;
+    background-color: $background-color;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: $container-max-width;
+    margin: 0 auto;
+    padding: $spacing-lg;
+    text-align: center;
+    
+    h1 {
+        margin-bottom: $spacing-lg;
+        color: $secondary-color;
+    }
+} 

@@ -1,0 +1,15 @@
+@use '../base/variables' as *;
+@use 'sass:color';
+
+.footer {
+    height: $footer-height;
+    background-color: $background-color;
+    border-top: 1px solid color.adjust($background-color, $lightness: -10%);
+    
+    .container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+} 
